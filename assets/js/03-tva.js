@@ -1,12 +1,21 @@
 console.log('Coucou');
+let prixHorsTaxe;
 
-prix = 25
-tva = 1.20
-resultat = prix / tva
-console.log(resultat);
+prixHorsTaxe = prompt("Donne moi un prix HT :", "exemple 50");
+// C'est une string 
+console.log( typeof prixHorsTaxe, prixHorsTaxe);
+// On change en valeur float
+prixHorsTaxe = parseFloat(prixHorsTaxe);
+console.log( typeof prixHorsTaxe, prixHorsTaxe);
 
-resultat = resultat * 20/100
-console.log(resultat);
+let tva, prixTTC, totalTVA;
 
-resultat = resultat + 20.83333333333333
-console.log(resultat);
+tva = 0.20;
+
+totalTVA = prixHorsTaxe * tva;
+
+prixTTC = prixHorsTaxe + totalTVA;
+
+console.log(prixTTC)
+
+document.write("<p>Résultat :<br />Le prix TTC est de " + prixTTC + "€.</p>");

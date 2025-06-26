@@ -1,34 +1,26 @@
 console.log('Hello');
-
 let a = 2;
-console.log(a);
-document.write("<p>" + "a"+  " = " + 2 + "</p>")
-
-
-
 a = a - 1;
-console.log(a);
+console.log("var a doit être à 1 : " + a);
 
 a++;
-console.log(a);
+console.log("var a doit être à 2 : " + a);
 
 let b = 8;
-console.log(b);
-
 b += 2;
-console.log(b);
+console.log("var b doit être à 10 : " + b);
 
 let c = a + b * b;
-console.log(c);
+console.log("var c doit être à 102 : " + c);
 
 let d = a * b + b;
-console.log(d); 
+console.log("var d doit être à 30 : " + d);
 
 let e = a * (b + b);
-console.log(e);
+console.log("var e doit être à 40 : " + e);
 
 let f = a * b / a;
-console.log(f);
+console.log("var f doit être à 10 : " + f);
 
 let g = b / a * a;
-console.log(g);
+console.log("var g doit être à 10 : " + g);
